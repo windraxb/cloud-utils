@@ -1,0 +1,19 @@
+language: node_js
+sudo: require
+node_js:
+- 8
+os: linux
+cahce:
+  yarn: true
+branches:
+  only:
+  - master
+install:
+- |
+    yarn install
+script:
+- |
+    yarn lint && yarn test
+after_success:
+- |
+    yarn coverall
