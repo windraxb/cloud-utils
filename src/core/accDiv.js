@@ -10,10 +10,10 @@
  * accDiv(0.2, 0.3)
  * // => 0.6666666666666666
  */
-function accDiv(arg1, arg2) {
-  var t1 = 0;
-  var t2 = 0;
-  var r1, r2;
+function accDiv (arg1, arg2) {
+  var t1 = 0
+  var t2 = 0
+  var r1, r2
 
   if (+arg2 === 0) {
     throw new Error('0 is not allowed for divisor')
@@ -35,3 +35,5 @@ function accDiv(arg1, arg2) {
   r2 = Number(arg2.toString().replace('.', ''))
   return (r1 / r2) * Math.pow(10, t2 - t1)
 }
+
+export default accDiv

@@ -8,29 +8,28 @@
  * accAdd(0.1, 0.2)
  * // => 0.3
  */
-function accAdd(arg1, arg2) {
-  var r1;
-  var r2;
-  var m;
-  var c;
+function accAdd (arg1, arg2) {
+  var r1
+  var r2
+  var m
 
   try {
-    r1 = arg1.toString().split('.')[1].length;
+    r1 = arg1.toString().split('.')[1].length
   } catch (e) {
-    r1 = 0;
+    r1 = 0
   }
 
   try {
-    r2 = arg2.toString().split('.')[1].length;
+    r2 = arg2.toString().split('.')[1].length
   } catch (e) {
-    r2 = 0;
+    r2 = 0
   }
 
-  var c = Math.abs(r1 - r2);
-  m = Math.pow(10, Math.max(r1, r2));
+  var c = Math.abs(r1 - r2)
+  m = Math.pow(10, Math.max(r1, r2))
 
   if (c > 0) {
-    var cm = math.pow(10, c);
+    var cm = Math.pow(10, c)
     if (r1 > r2) {
       arg1 = Number(arg1.toString().replace('.', ''))
       arg2 = Number(arg2.toString().replace('.', '')) * cm
@@ -39,10 +38,10 @@ function accAdd(arg1, arg2) {
       arg2 = Number(arg2.toString().replace('.', ''))
     }
   } else {
-    arg1 = Number(arg1.toString().replace('.', ''));
-    arg2 = Number(arg2.toString().replace('.', ''));
+    arg1 = Number(arg1.toString().replace('.', ''))
+    arg2 = Number(arg2.toString().replace('.', ''))
   }
-  return (arg1 + arg2) / m;
+  return (arg1 + arg2) / m
 }
 
 export default accAdd

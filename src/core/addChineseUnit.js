@@ -35,50 +35,49 @@
  * addChineseUnit(4000000000000000000000000)
  * // => 4亿亿亿
  */
-function addChineseUnit(number, decimalDigit) {
+function addChineseUnit (number, decimalDigit) {
   var addWan = function (integer, number, mutiple, decimalDigit) {
     var digit = getDigit(integer)
     if (digit > 3) {
-      var remainder = digit % 8;
-      remainder = remainder >= 5 ? 4 : remainder;
-      return Math.round(number / Math.pow(10, remainder + mutiple - decimalDigit)) / Math.pow(10, decimalDigit) + '万';
+      var remainder = digit % 8
+      remainder = remainder >= 5 ? 4 : remainder
+      return Math.round(number / Math.pow(10, remainder + mutiple - decimalDigit)) / Math.pow(10, decimalDigit) + '万'
     } else {
-      return Math.round(number / Math.pow(10, mutiple - decimalDigit)) / Math.pow(10, decimalDigit);
+      return Math.round(number / Math.pow(10, mutiple - decimalDigit)) / Math.pow(10, decimalDigit)
     }
   }
 
   var getDigit = function (integer) {
-    integer = Math.abs(integer);
-    var digit = -1;
+    integer = Math.abs(integer)
+    var digit = -1
     while (integer >= 1) {
-      digit++;
-      integer = integer / 10;
+      digit++
+      integer = integer / 10
     }
-    return digit;
+    return digit
   }
 
-  return function (number, decimalDigit) {
-    decimalDigit = decimalDigit == null ? 2 : decimalDigit;
-    var integer = Math.floor(number);
-    var digit = getDigit(integer);
-    var unit = [];
+  return (function (number, decimalDigit) {
+    decimalDigit = decimalDigit == null ? 2 : decimalDigit
+    var integer = Math.floor(number)
+    var digit = getDigit(integer)
+    var unit = []
     if (digit > 3) {
-      var multiple = Math.floor(digit / 8);
+      var multiple = Math.floor(digit / 8)
       if (multiple >= 1) {
-        var tmp = Math.round(integer / Math.pow(10, 8 * multiple));
-        unit.push(addWan(tmp, number, 8 * multiple, decimalDigit));
+        var tmp = Math.round(integer / Math.pow(10, 8 * multiple))
+        unit.push(addWan(tmp, number, 8 * multiple, decimalDigit))
         for (let i = 0; i < multiple; i++) {
           unit.push('亿')
         }
-        return unit.join('');
+        return unit.join('')
       } else {
         return addWan(integer, number, 0, decimalDigit)
       }
     } else {
-      return parseFloat(number).toFixed(decimalDigit);
+      return parseFloat(number).toFixed(decimalDigit)
     }
-  }(number, decimalDigit)
+  }(number, decimalDigit))
 }
 
-
-export default addChineseUnit;
+export default addChineseUnit

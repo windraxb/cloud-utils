@@ -10,7 +10,7 @@
  * accMul(0.222, 0.3333)
  * // => 0.0739926
  */
-function accMul(arg1, arg2) {
+function accMul (arg1, arg2) {
   var m = 0
   var s1 = arg1.toString()
   var s2 = arg2.toString()
@@ -22,12 +22,12 @@ function accMul(arg1, arg2) {
   }
 
   try {
-    s2.split('.')[1] && (m += s2.split('.')[1].length);
+    s2.split('.')[1] && (m += s2.split('.')[1].length)
   } catch (e) {
     console.error(e)
   }
 
-  return Number(s1.replace('.', '')) * Number(s2.replace('.', '')) / Math.pow(10, m);
+  return Number(s1.replace('.', '')) * Number(s2.replace('.', '')) / Math.pow(10, m)
 }
 
 export default accMul

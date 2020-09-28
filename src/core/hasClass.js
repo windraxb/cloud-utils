@@ -9,13 +9,13 @@
  * hasClass(document.querySelector('.box'), 'flex');
  * // => true
  */
-function hasClass(el, cls) {
-  if (!el || !cls) return false;
-  if (cls.indexOf(' ') !== -1)  throw new Error('className should not contain space.')
+function hasClass (el, cls) {
+  if (!el || !cls) return false
+  if (cls.indexOf(' ') !== -1) throw new Error('className should not contain space.')
   if (el.classList) {
-    return el.classList.contains(cls);
+    return el.classList.contains(cls)
   } else {
-    return (' ' + el.className + ' ').indexOf(' ' + cls + ' ') > -1;
+    return (' ' + el.className + ' ').indexOf(' ' + cls + ' ') > -1
   }
 }
 
