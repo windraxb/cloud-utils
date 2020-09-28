@@ -10,7 +10,7 @@ branches:
   - master
 install:
 - |
-    yarn install
+    yarn
 script:
 - |
     yarn lint && yarn test
