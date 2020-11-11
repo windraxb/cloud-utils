@@ -49,6 +49,9 @@ requirejs(['node_modules/@windraxb/cloud-utils/dist/cloud-utils.js'], function (
 </script>
 ```
 
+## 文档
+[API](https://windraxb.github.io/cloud-utils/)
+
 ## 贡献指南
 首次运行需要先安装依赖
 
