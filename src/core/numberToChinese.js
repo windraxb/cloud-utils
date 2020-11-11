@@ -1,7 +1,6 @@
 /**
  * 数字转换成中文的大写数字
  *
- * @since 1.2.5
  * @param num
  * @returns {string}
  * @example

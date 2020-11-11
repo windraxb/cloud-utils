@@ -274,10 +274,10 @@ export declare function dig(obj: object, target: object): object;
  * @param {object} params
  * @example
  *
- * const params = { mobile: '15858264900', nickname: 'liwb', appkey: 'ertfgdf345435568123454rtoiko5=' };
+ * const params = { mobile: '15858264900', nickname: 'windraxb', appkey: 'ertfgdf345435568123454rtoiko5=' };
  *
  * md5(encrypt(params).toUpperCase());
- * // => md5('APPKEY=ERTFGDF34543545=&MOBILE=15858264903&NICKNAME=LIWB')
+ * // => md5('APPKEY=ERTFGDF34543545=&MOBILE=15858264903&NICKNAME=windraxb')
  */
 export declare function encrypt(params: object): string;
 
