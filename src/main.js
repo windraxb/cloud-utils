@@ -1,15 +1,73 @@
-export {default as accAdd} from './core/accAdd'
-export {default as accMul} from './core/accMul'
-export {default as accDiv} from './core/accDiv'
-export { default as accSub } from './core/accSub'
-export {default as addChineseUnit} from './core/addChineseUnit'
-export {default as addClass} from './core/addClass'
-export { default as anagrams} from './core/anagrams'
-export { default as bytesToSize} from './core/bytesToSize'
-export { default as capitalizeEveryWord} from './core/capitalizeEveryWord'
-export { default as changeMoneyToChinese} from './core/changeMoneyToChinese'
-export { default as combineURLs} from './core/combineURLs'
-export { default as compareVersion } from './core/compareVersion'
-export { default as dataURLToBlob} from './core/dataURLToBlob'
-export { default as deepClone } from './core/deepClone'
-export { default as hasClass} from './core/hasClass'
+export {default as accAdd} from './core/accAdd';
+export {default as accDiv} from './core/accDiv';
+export {default as accMul} from './core/accMul';
+export {default as accSub} from './core/accSub';
+export {default as addChineseUnit} from './core/addChineseUnit';
+export {default as encrypt} from './core/encrypt';
+export {default as formatBankCard} from './core/formatBankCard';
+export {default as formatDate} from './core/formatDate';
+export {default as formatTimeAgo} from './core/formatTimeAgo';
+export {default as formatDateToTimeStamp} from './core/formatDateToTimeStamp';
+export {default as formatMoney} from './core/formatMoney';
+export {default as formatPhone} from './core/formatPhone';
+export {default as getLocationHrefParam} from './core/getLocationHrefParam';
+export {default as getLocationSearchParam} from './core/getLocationSearchParam';
+export {default as htmlDecode} from './core/htmlDecode';
+export {default as htmlEncode} from './core/htmlEncode';
+export {default as inAlipay} from './core/inAlipay';
+export {default as inWeixin} from './core/inWeixin';
+export {default as isCardId} from './core/isCardId';
+export {default as isDigit} from './core/isDigit';
+export {default as isEmptyObject} from './core/isEmptyObject';
+export {default as isLeapYear} from './core/isLeapYear';
+export {default as isLetters} from './core/isLetters';
+export {default as isValidEmail} from './core/isValidEmail';
+export {default as preZeroFill} from './core/preZeroFill';
+export {default as bytesToSize} from './core/bytesToSize';
+export {default as dataURLToBlob} from './core/dataURLToBlob';
+export {default as getPixelRatio} from './core/getPixelRatio';
+export {default as getDevice} from './core/getDevice';
+export {default as getBrowser} from './core/getBrowser';
+export {default as getDiffDay} from './core/getDiffDay';
+export {default as addClass} from './core/addClass';
+export {default as hasClass} from './core/hasClass';
+export {default as removeClass} from './core/removeClass';
+export {default as formatNumber} from './core/formatNumber';
+export {default as compareVersion} from './core/compareVersion';
+export {default as getIn} from './core/getIn';
+export {default as anagrams} from './core/anagrams';
+export {default as capitalizeEveryWord} from './core/capitalizeEveryWord';
+export {default as last} from './core/last';
+export {default as timeTaken} from './core/timeTaken';
+export {default as scrollToTop} from './core/scrollToTop';
+export {default as isChinese} from './core/isChinese';
+export {default as isHTML} from './core/isHTML';
+export {default as getMonthOfDay} from './core/getMonthOfDay';
+export {default as getDays} from './core/getDays';
+export {default as getDayOfYear} from './core/getDayOfYear';
+export {default as getDayOfYearWeek} from './core/getDayOfYearWeek';
+export {default as getYearOfDay} from './core/getYearOfDay';
+export {default as changeMoneyToChinese} from './core/changeMoneyToChinese';
+export {default as numberToChinese} from './core/numberToChinese';
+export {default as toNonExponential} from './core/toNonExponential';
+export {default as getURLParameters} from './core/getURLParameters';
+export {default as mapValues} from './core/mapValues';
+export {default as mapKeys} from './core/mapKeys';
+export {default as trim} from './core/trim';
+export {default as deepClone} from './core/deepClone';
+export {default as deepMapKeys} from './core/deepMapKeys';
+export {default as dig} from './core/dig';
+export {default as isEmpty} from './core/isEmpty';
+export {default as merge} from './core/merge';
+export {default as combineURLs} from './core/combineURLs';
+export {default as inWeibo} from './core/inWeibo';
+export {default as isMobileLoose} from './core/isMobileLoose';
+export {default as isValidBankNo} from './core/isValidBankNo';
+export {default as isValidBase64Format} from './core/isValidBase64Format';
+export {default as isValidUserName} from './core/isValidUserName';
+export {default as isPhoneX} from './core/isPhoneX';
+export {default as inQQBrowser} from './core/inQQBrowser';
+export {default as inUCBrowser} from './core/inUCBrowser';
+export {default as equals} from './core/equals';
+export {default as getImgBase64} from './core/getImgBase64';
+export {default as filterEmptyPropObj} from './core/filterEmptyPropObj';
