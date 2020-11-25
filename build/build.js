@@ -47,7 +47,7 @@ function buildEntry(config) {
           output: {
             ascii_only: true
           },
-          process: {
+          compress: {
             pure_funcs: ['makeMap']
           }
         }).code
