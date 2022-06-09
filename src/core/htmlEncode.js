@@ -9,7 +9,7 @@
  * // => &lt;script&gt;
  */
 function htmlEncode (str) {
-  if (typeof str === 'string' && str.length === 0) return
+  if (typeof str === 'string' && str.length === 0) return ''
 
   const s = str.replace(/&/g, '&amp;')
 

@@ -9,7 +9,7 @@
  * // => <script>
  */
 function htmlDecode (str) {
-  if (typeof str === 'string' && str.length === 0) return
+  if (typeof str === 'string' && str.length === 0) return ''
 
   const s = str.replace(/&amp;/g, '&')
 
